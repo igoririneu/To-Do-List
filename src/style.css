@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgba(186, 203, 240, 0.384);
+}
+
+/*--------------------> Container-main */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    justify-content: space-around;
+}
+
+.container__main {
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 10vh ;
+    padding: 20px;
+    text-align: center;
+    
+    box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+    -webkit-box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+	-moz-box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+
+    background-color: #0079a8;
+    border-radius: 20px;
+}
+
+.main__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main__icon {
+    height: 8vh;
+    margin-right: 20px;
+}
+
+.main__title{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style:italic;
+}
+
+.main__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vw;
+}
+
+.main__label {
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#main__input {
+    height: 40px;
+    width: 30vw;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0078a8;
+    border-radius: 20px;
+}
+
+#main__input::placeholder {
+    font-weight: bold;
+    color: #0078a865;
+}
+
+.main__control {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 10vh;
+    width: 35vw;
+}
+
+.main__submit {
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit ;
+    height: 5vh;
+    width: 10vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: solid 3px white;
+    border-radius: 20px;
+}
+
+.main__submit:hover {
+    background-color: #074963 ;
+}
+
+.main__reset-all {
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit ;
+    height: 5vh;
+    width: 10vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: solid 3px white;
+    border-radius: 20px;
+}
+
+.main__reset-all:hover {
+    background-color: #074963;
+}
+
+/*--------------------> Container-checklist */
+
+.container__checklist {
+    height: auto;
+    width: 30vw;
+    margin: auto;
+    padding: 20px;
+    background-color: #0079a8;
+    border-radius: 20px;
+
+    box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+    -webkit-box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+	-moz-box-shadow: 5px 10px 5px 8px rgba(105, 103, 103, 0.445);
+}
+
+.container__checklist h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.container__checklist hr {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 15px;
+}
+
+.checklist__task {
+    display: flex;
+    padding: 10px;
+    width: auto;
+
+    align-items: center;
+    justify-content:flex-start;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.checklist__task label {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0078a8;
+}
+
+.task__delete {
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    
+    margin: 0 auto;
+    padding: 10px;
+    width: 27.5vw;
+
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#0079a8;
+    color: white;
+    border-radius: 10px;
+}
+
+.task__delete:hover {
+    background-color: #074963;
+}
+
+/*--------------------> @media */
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: block;
+    }
+
+    .container__main {
+        margin: 10vw;
+        width: auto;
+    }
+
+    .main__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        height: 25vh;
+        width: 60vw;
+    }
+
+    .main__label {
+        color: white;
+        margin: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    #main__input {
+        height: 40px;
+        width: 60vw;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #0078a8;
+        border-radius: 20px;
+    }
+
+    .main__control {
+
+        width: 60vw;
+    }
+
+    .main__submit {
+
+        width: 20vw;
+    }
+    .main__reset-all {
+
+        width: 20vw;
+    }
+
+    .container__checklist {
+        width: 75vw;
+    }
+
+    .task__delete {
+        width: 67vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        #main__input {
+            width: 70vw;
+        }
+    }
+}
+
+
+
+

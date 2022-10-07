@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="container__main">
+            <div class="main__header">
+                <img class="main__icon" src="../assets/icon-check.png" alt="Ícon checklist" title="Checklist">
+                <h1 class="main__title">To-do list</h1>
+            </div>
+            <div class="main__body">
+                <label class="main__label" for="main__input">Task Name</label>
+                <input id="main__input" type="text" name="input-list" placeholder="What is your task?" required>
+            </div>
+            <div class="main__control">
+                <button class="main__submit" type="submit" name="submit" onclick="submitTask()">ADD</button>
+                <button class="main__reset-all" type="reset" name="delete-all" onclick="deleteAll()">Clear</button>
+            </div>
+        </div>
+        <div class="container__checklist">
+            <h1>Tasks</h1><hr>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
